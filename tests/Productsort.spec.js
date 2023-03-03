@@ -1,0 +1,20 @@
+const{test,expect}=require("@playwright/test")
+
+test.skip("Beauty and Grooming",async function({page}){
+await page.goto("https://testing.ui.plentyz.pk")
+await page.locator("//*[local-name()='svg' and @class='svg-inline--fa fa-bars fa-1x mr-2']").click()
+await page.waitForTimeout(3000)
+await page.locator("//ul[@class='style_listGroup__Mpv9x list-group']/li[2]").click()
+await page.waitForTimeout("7000")
+await page.locator("//select[@class='custom-select custom-select-sm']").selectOption("Discount Products")
+await page.waitForTimeout(3000)
+await page.locator("//select[@class='custom-select custom-select-sm']").selectOption("Low to High Price")
+await page.waitForTimeout(3000)
+await page.locator("//select[@class='custom-select custom-select-sm']").selectOption("High to Low Price")
+await page.waitForTimeout(3000)
+await page.locator("//select[@class='custom-select custom-select-sm']").selectOption("Lowest Rank")
+await page.waitForTimeout(3000)
+await page.locator("//select[@class='custom-select custom-select-sm']").selectOption("Highest Rank")
+await page.waitForTimeout(3000)
+
+})
