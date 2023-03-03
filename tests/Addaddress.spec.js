@@ -1,7 +1,7 @@
 const{test,expect}=require("@playwright/test")
 
 test.skip("Positive Test Case",async function({page}){
-    await pag.goto("https://testing.ui.plentyz.pk/login")
+    await page.goto("https://testing.ui.plentyz.pk/login")
     await page.locator("//input[@name='email']").type("tanveersalim24@gmail.com")
     await page.locator("//input[@name='password']").type("Admin@11")
     await page.locator("//button[@name='Login']").click()
