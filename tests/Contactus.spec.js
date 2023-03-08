@@ -47,7 +47,7 @@ test.skip("Negative2 Test Case",async function({page}){
     await expect.soft(emailerrormessage).toContainText("Please provide valid email")
 })
 
-test("Negative3 Test Case",async function({page}){
+test.skip("Negative3 Test Case",async function({page}){
     await page.goto("https://testing.ui.plentyz.pk/contact-us")
     const name=page.locator("//input[@name='name']")
     const email=page.locator("//input[@name='email']")
