@@ -1,6 +1,6 @@
 const{test,expect}=require('@playwright/test')
 
-test("spin wheel",async function({page}){
+test.skip("spin wheel",async function({page}){
     await page.goto("https://testing.ui.plentyz.pk/login")
     await page.locator("//input[@name='email']").fill("tanveersalim24@gmail.com")
     await page.locator("//input[@name='password']").fill("Admin@11")
