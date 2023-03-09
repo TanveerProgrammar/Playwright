@@ -42,7 +42,7 @@ await expect.soft(passworderrormessage).toContainText("Please enter a password")
 })
     
 test.skip("Negative2 Test Case",async function({page}){
-    await page.goto("https://testing.ui.plentyz.pk/login")
+await page.goto("https://testing.ui.plentyz.pk/login")
 const email= page.locator("//input[@name='email']")
 const password=page.locator("//input[@name='password']")
 const emailerrormessage=page.locator("//div[@class='col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10']//div[@class='invalid-feedback'][normalize-space()='Please provide valid email']")
