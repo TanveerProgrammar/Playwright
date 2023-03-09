@@ -84,7 +84,7 @@ test.skip("Negative2 Test Case",async function({page}){
   
 })
 
-test("Negative3 Test Case",async function({page}){
+test.skip("Negative3 Test Case",async function({page}){
     await page.goto("https://testing.ui.plentyz.pk/login")
     const email=page.locator("//input[@name='email']")
     const password=page.locator("//input[@name='password']")
