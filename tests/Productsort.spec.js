@@ -8,7 +8,6 @@ const lowtohighprice=page.locator("//select[@class='custom-select custom-select-
 const hightolowprice=page.locator("//select[@class='custom-select custom-select-sm']")
 const lowestrank=page.locator("//select[@class='custom-select custom-select-sm']")
 const highestrank=page.locator("//select[@class='custom-select custom-select-sm']")
-
 await page.locator("//*[local-name()='svg' and @class='svg-inline--fa fa-bars fa-1x mr-2']").click()
 await page.waitForTimeout(3000)
 await selectcategory.click()
