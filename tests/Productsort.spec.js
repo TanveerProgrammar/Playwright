@@ -11,7 +11,7 @@ const highestrank=page.locator("//select[@class='custom-select custom-select-sm'
 await page.locator("//*[local-name()='svg' and @class='svg-inline--fa fa-bars fa-1x mr-2']").click()
 await page.waitForTimeout(3000)
 await selectcategory.click()
-await page.waitForTimeout("7000")
+await page.waitForTimeout(7000)
 await discountedproduct.selectOption("Discount Products")
 await page.waitForTimeout(3000)
 await lowtohighprice.selectOption("Low to High Price")
