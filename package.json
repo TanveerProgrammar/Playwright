@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "report": "npx playwright test --debug"
+    "debug": "npx playwright test --debug"
   },
   "keywords": [],
   "author": "",
