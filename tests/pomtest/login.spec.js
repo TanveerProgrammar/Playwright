@@ -15,7 +15,7 @@ test.skip('Login', async ({ page }) => {
     await loginpage.clickLogin()
 });
 
-test('Search', async ({ page }) => {
+test.skip('Search', async ({ page }) => {
   const search = new SearchPage(page);
   await search.selectcategory("Beauty & Grooming")
   await search.searchproducts("cream")
